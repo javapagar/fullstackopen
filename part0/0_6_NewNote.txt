@@ -1,0 +1,13 @@
+note over browser:
+on button click executing js-code that creates new note.
+it adds the new note to the notes list and then renderers the list on the page.
+At last, it sends note content and timestamp in JSON format to server
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server ->browser: 201 Created
+
+note over server:
+creates a new note object
+and adds it to an array
+end note
